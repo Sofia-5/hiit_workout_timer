@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./projectOne.css"/>
+    <title>Workout Timer</title>
+</head>
+<body>
+    <h1>Sofia's Workout Timer</h1> 
+
+<!-- TOTAL WORKOUT TIME TIMER -->
+    <div>
+        <div class="totalWorkoutTimer" id="timer"> 
+            <p>Total Workout Time</p>
+            <div>
+                <span class="totalSeconds" id="second"> 00 </span> 
+                <div class="label">Seconds</div>
+            </div> 
+        </div> 
+
+        <div class="breakTimer" id="timer"> 
+            <p>Break Time</p>
+            <div>
+                <span class="breakSeconds" id="second"> 00 </span> 
+                <div class="label">Seconds</div> 
+            </div>
+        </div> 
+    </div>
+
+
+    <form id="typesOfExerciseForm">
+        <label for="typesOfExercises">Number of Exercises</label>
+        <input type="number" id="typesOfExercises" placeholder="# of Types of Exercises" required>
+
+        <label for="numberOfSets">Number of Sets</label>
+        <input type="number" id="numberOfSets" placeholder="# of Sets" required>
+        
+        <button type="submit" class="startTimer"> Start </button>
+    </form>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="projectOne.js"></script>
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+</body>
+</html>
+

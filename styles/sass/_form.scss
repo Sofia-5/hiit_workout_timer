@@ -1,0 +1,50 @@
+/*****************/
+/*  Form Styles  */ 
+/*****************/
+
+.label{ 
+  padding-top: 10px; 
+  font-size: 25px; 
+} 
+
+input { 
+  color: navy;
+  border: 1px solid navy;
+  margin: 25px 15px 15px auto;
+  border-radius: 5%;
+  font-size: 25px;
+  padding: 10px;
+  background-color: white;
+}
+
+input.number { 
+  font-size: 20px;
+  padding: 13px;
+}
+
+.startTimer {
+  color: navy;
+  border:3px solid navy;
+  margin: 25px 15px 15px auto;
+  border-radius: 5%;
+  font-size: 25px;
+  padding: 10px;
+  background-color: palevioletred;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #ffb100; 
+}
+
+::placeholder {
+  color: #F26430;
+  font-family: 'Barlow', sans-serif;
+  font-size: 1rem; 
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+button:hover {
+  background-color: white;
+}

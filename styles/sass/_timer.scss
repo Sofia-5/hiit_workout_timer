@@ -1,0 +1,29 @@
+/*****************/
+/* Timer Styles */ 
+/*****************/
+
+
+#timer{ 
+  font-family: sans-serif; 
+  color: #fff; 
+  display: inline-block; 
+  font-weight: 100; 
+  text-align: center; 
+} 
+#timer > div{ 
+  padding: 30px; 
+  border-radius: 5px; 
+  background: navy; 
+  display: inline-block; 
+  margin: 10px;
+} 
+#timer div > span{ 
+  padding: 30px; 
+  border-radius: 5px; 
+  background: white; 
+  display: inline-block; 
+} 
+#second { 
+  font-size: 40px; 
+  color: navy; 
+}
