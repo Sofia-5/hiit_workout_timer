@@ -30,18 +30,19 @@
 
 
     <form id="typesOfExerciseForm">
+        <h2>Customize Your Workout</h2>
         <div class="typesOfExercises">
             <label for="typesOfExercises">Number of Exercises</label>
-            <input type="number" id="typesOfExercises" placeholder="# of Types of Exercises" required>
+            <input type="number" min="1" id="typesOfExercises" placeholder="Number of Types of Exercises" required>
         </div> 
 
         <div class="numberOfSets">
             <label for="numberOfSets">Number of Sets</label>
-            <input type="number" id="numberOfSets" placeholder="# of Sets" required>
+            <input type="number" min="1" id="numberOfSets" placeholder="Number of Sets" required>
         </div>  
         
         <div>
-            <button type="submit" class="startTimer"> Start </button>
+            <button type="submit" class="startTimer"> Start Timer </button>
         </div>
     </form>
 

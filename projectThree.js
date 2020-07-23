@@ -16,6 +16,7 @@
 $(document).ready(function() {
   console.log('document ready'); 
   timerApp.init ();
+  $('input[type=number]').val('1');
 })
 
   // 1. Create an object to organize my code in 
@@ -29,6 +30,9 @@ timerApp.eventListener ();
 timerApp.eventListener = function() {
   $('form').on('submit', function(e){
     e.preventDefault();
+    $('form').attr('aria-label', 'started');
+    $('button[type=submit]').addClass('submitted');
+
 
     const userInput1 = $('#typesOfExercises').val();
     const typesOfExercises = parseInt(userInput1);
@@ -65,18 +69,26 @@ timerApp.totalTimer = function(totalSecsOfExercises) {
       
     if (timer === 0) {
         clearInterval(timerInterval);
+        $('.totalSeconds').text(timer);
     }
 
     }, 1000)
   } ,3000)
 }
 
+
 timerApp.breakTimer = function( ) {
   let timer = 5; 
+  const breakAudio = new Audio ('./assets/5-sec-countdown.wav');
+  breakAudio.play ();
+  $('.breakSeconds').text(timer);
   let timerInterval = setInterval(function (){
-        console.log('tick')
+        console.log('break tick')
+        console.log (timer);
         timer = timer - 1; 
         $('.breakSeconds').text(timer);
+        console.log (timer);
+        
       
     if (timer === 0) {
         clearInterval(timerInterval);
