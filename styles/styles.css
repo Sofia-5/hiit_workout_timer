@@ -275,13 +275,14 @@ body {
   background: lavenderblush;
   font-family: sans-serif;
   font-weight: 100;
+  color: navy;
 }
 
 h1 {
   color: navy;
   font-weight: 100;
   font-size: 40px;
-  margin: 60px 0px 20px;
+  margin: 60px 0px;
 }
 
 /*****************/
@@ -310,15 +311,69 @@ h1 {
   display: inline-block;
 }
 
+#timer p {
+  padding: 5px;
+  font-size: 20px;
+  color: navy;
+}
+
 #second {
   font-size: 40px;
   color: navy;
 }
 
+.label {
+  padding-top: 10px;
+  font-size: 25px;
+}
+
 /*****************/
 /*  Form Styles  */
 /*****************/
-.label {
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form .typesOfExercises {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0;
+}
+
+form .numberOfSets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+label {
   padding-top: 10px;
   font-size: 25px;
 }
@@ -326,7 +381,6 @@ h1 {
 input {
   color: navy;
   border: 1px solid navy;
-  margin: 25px 15px 15px auto;
   border-radius: 5%;
   font-size: 25px;
   padding: 10px;
@@ -341,11 +395,12 @@ input.number {
 .startTimer {
   color: navy;
   border: 3px solid navy;
-  margin: 25px 15px 15px auto;
+  margin: 25px 0;
   border-radius: 5%;
   font-size: 25px;
   padding: 10px;
   background-color: palevioletred;
+  width: 100px;
 }
 
 input:focus,

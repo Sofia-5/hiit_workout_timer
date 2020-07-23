@@ -9,6 +9,7 @@
   display: inline-block; 
   font-weight: 100; 
   text-align: center; 
+ 
 } 
 #timer > div{ 
   padding: 30px; 
@@ -22,8 +23,21 @@
   border-radius: 5px; 
   background: white; 
   display: inline-block; 
+
 } 
+
+#timer p{ 
+  padding: 5px; 
+  font-size: 20px; 
+  color: navy; 
+} 
+
 #second { 
   font-size: 40px; 
   color: navy; 
+}
+
+.label {
+  padding-top: 10px; 
+  font-size: 25px; 
 }
