@@ -5,6 +5,10 @@
 form {
   display: flex;
   flex-direction: column;
+  background-color: $primaryColour;
+  width: (100% / 2);
+  margin: 20px auto;
+  border-radius: 10px;
 }
 
 form .typesOfExercises {

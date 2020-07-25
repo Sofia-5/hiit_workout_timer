@@ -1,3 +1,16 @@
 /*****************/
 /*    Mixins     */ 
 /*****************/
+
+@mixin background {
+  background: hsla(18, 81%, 71%, 1);
+  background: linear-gradient(90deg, hsla(18, 81%, 71%, 0.9) 60%, hsla(340, 76%, 48%, 0.7) 100%);
+  background: -moz-linear-gradient(90deg, hsla(18, 81%, 71%, 0.9) 60%, hsla(340, 76%, 48%, 0.7) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(18, 81%, 71%, 0.9) 60%, hsla(340, 76%, 48%, 0.7) 100%);
+}
+
+
+
+@mixin timer {
+  
+}

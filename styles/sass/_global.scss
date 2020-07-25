@@ -3,17 +3,46 @@
 /*****************/
 
 body { 
+  @include background ();
   text-align: center; 
-  background: lavenderblush; 
-  font-family: sans-serif; 
+  font-family: $body; 
   font-weight: 100; 
-  color: navy; 
+  color: ffffff; 
 } 
 
 h1,
 h2 { 
-color: navy; 
-font-weight: 100; 
-font-size: 40px; 
-margin: 60px 0px; 
+font-family: $header;
+color: #ffffff; 
+font-weight: 600; 
 } 
+
+h1 {
+  font-size: 50px; 
+  margin: 60px 0px;
+}
+
+h2 {
+  font-size: 35px; 
+  margin: 40px auto;
+}
+
+h3,
+label {
+  font-family: $body;
+  color: #ffffff; 
+  font-size: 25px; 
+  margin: 5px auto;
+  font-weight: 400; 
+  width: 80%;
+}
+
+.label {
+  font-family: $body;
+  color: #ffffff;
+  font-weight: 300; 
+}
+
+
+
+

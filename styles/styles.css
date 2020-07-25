@@ -264,6 +264,8 @@ html {
 /*****************/
 /*   Variables   */
 /*****************/
+/* Colours */
+/* Font Families */
 /*****************/
 /*    Mixins     */
 /*****************/
@@ -271,18 +273,47 @@ html {
 /* Global Styles */
 /*****************/
 body {
+  background: #f19d79;
+  background: -webkit-gradient(linear, left top, right top, color-stop(60%, rgba(241, 157, 121, 0.9)), to(rgba(215, 29, 91, 0.7)));
+  background: linear-gradient(90deg, rgba(241, 157, 121, 0.9) 60%, rgba(215, 29, 91, 0.7) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(241, 157, 121, 0.9) 60%, rgba(215, 29, 91, 0.7) 100%);
   text-align: center;
-  background: lavenderblush;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 100;
-  color: navy;
+  color: ffffff;
+}
+
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 h1 {
-  color: navy;
-  font-weight: 100;
-  font-size: 40px;
+  font-size: 50px;
   margin: 60px 0px;
+}
+
+h2 {
+  font-size: 35px;
+  margin: 40px auto;
+}
+
+h3,
+label {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-size: 25px;
+  margin: 5px auto;
+  font-weight: 400;
+  width: 80%;
+}
+
+.label {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-weight: 300;
 }
 
 /*****************/
@@ -338,6 +369,10 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #0D0628;
+  width: 50%;
+  margin: 20px auto;
+  border-radius: 10px;
 }
 
 form .typesOfExercises {
@@ -442,5 +477,15 @@ textarea:focus {
 
 button:hover {
   background-color: white;
+}
+
+/*****************/
+/* Submit Button */
+/*****************/
+button {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 25px;
 }
 /*# sourceMappingURL=styles.css.map */
