@@ -2,10 +2,139 @@
 /* Media Queries */ 
 /*****************/
 
-/* Timer Styles */ 
-/*****************/
-@media (max-width: 1129px) {
-  .breakTimer h3 { 
-    padding: 15px 30px;
+@media (max-width: 1119px) {
+  
+  .sectionOne,
+  .sectionTwo {
+    width: 55%;
   }
 }
+
+@media (max-width: 955px) {
+
+  .sectionOne,
+  .sectionTwo {
+    width: 60%;
+  }
+}
+
+@media (max-width: 838px) { 
+  .breakTimer h3 { 
+    padding: 19px 5px;
+  }
+} 
+
+@media (max-width: 615px) { 
+
+  .timer {  
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .totalWorkoutTimer {
+    margin-bottom: 30px;
+  }
+
+  .totalWorkoutTimer,
+  .breakTimer {
+    width: 100%;
+  }
+
+  .startTimer {
+    font-size: 2rem;
+    width: 50%;
+  }
+}
+
+@media (max-width: 548px) { 
+
+  h1 {
+    font-size: 4.5rem; 
+    margin: 50px 0px;
+  }
+
+  h2 {
+    font-size: 3rem; 
+  }
+
+  form .typesOfExercises {
+    margin: 20px 0;
+  }
+
+  input { 
+    font-size: 2rem;
+    padding: 10px;   
+  }
+  
+  input.number { 
+    font-size: 2rem;
+    padding: 10px;
+    width: 95%;
+  }
+  
+  .startTimer {
+    margin: 30px 0;
+    padding: 15px 10px;
+    width: 45%;
+  }
+
+  ::placeholder {
+    display: none;
+  }
+}
+
+@media (max-width: 476px) { 
+  .sectionOne,
+  .sectionTwo {
+    width: 80%;
+  }
+  
+  .totalWorkoutTimer {
+    margin-bottom: 20px;
+  }
+
+  .sectionOne {
+    margin: 20px auto;
+  }
+
+  .breakTimer h3 { 
+    padding: 10px 5px;
+  }
+
+  label {
+    font-size: 2rem; 
+  }
+
+  .startTimer {
+    margin: 25px 0;
+    font-size: 2rem;
+    width: 50%;
+  }
+}
+
+@media (max-width: 320px) { 
+
+  h1 {
+    font-size: 3.5rem; 
+    margin: 30px 0px;
+  }
+
+  .sectionOne,
+  .sectionTwo {
+    width: 90%;
+  }
+
+  .sectionOne {
+    margin: 20px auto;
+  }
+
+  .totalWorkoutTimer {
+    margin-bottom: 20px;
+  }
+
+  .breakTimer h3 { 
+    padding: 10px 5px;
+  }
+} 

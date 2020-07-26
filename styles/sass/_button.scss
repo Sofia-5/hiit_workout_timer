@@ -2,7 +2,7 @@
 /* Submit Button */ 
 /*****************/
 button {
-  border-radius: 10%;
+  border-radius: 8px;
 }
 
 .startTimer {
@@ -18,7 +18,7 @@ button {
 }
 
 button:hover {
-  // background-color: $supAccent;
+  background-color: $secondaryColour;
   border: 3px solid $supAccent;
   color: $primaryColour;
 }

@@ -4,7 +4,7 @@
 .sectionOne {
   max-width: 1200px;
   width: 50%;
-  margin: 20px auto;  
+  margin: 30px auto;  
 }
 
 .timer {  
@@ -15,19 +15,19 @@
 .totalWorkoutTimer,
 .breakTimer {
   width: 47%;
-  // width: calc(100% / 2) - 10px;
   background-color: $primaryColour;
   border-radius: 10px;
   padding: 10px 0;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
 }
 
 .workoutTimerH3,
 .breakTimerH3 {
-  width: 98%; 
+  width: 98%;
+  margin-top: 15px;
+}
+
+h3 {
+  padding: 5px;
 }
 
 .whiteBox {
@@ -35,47 +35,8 @@
   border-radius: 10px;
   padding: 30px;
   display: inline-block;
+  margin: 10px auto;
 }
-
-
-
-// .timer {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-// }
-
-// #timer > div{ 
-//   // padding: 30px; 
-//   border-radius: 10px; 
-//   background: $primaryColour; 
-//   display: inline-block; 
-//   // margin: 10px 0;
-// } 
-
-// .totalWorkoutTimer {
-//   width: (100% / 2);
-//   height: 100%;
-//   margin-right: 10px; 
-// }
-
-// .breakTimer {
-//   width: (100% / 2);
-//   height: 100%;
-//   margin-left: 10px; 
-// }
-
-.breakTimer h3 { 
-  // padding: 10px 30px;
-}
-
-// / #timer div > span{ /
-//   padding: 30px; 
-//   margin: 10px auto;
-//   border-radius: 5px; 
-//   background: white; 
-//   display: inline-block; 
-// } 
 
 #second { 
   font-size: 40px; 
@@ -84,5 +45,6 @@
 
 .label {
   font-weight: 300; 
-  font-size: 25px; 
+  font-size: 20px; 
+  margin-bottom: 15px;
 }
