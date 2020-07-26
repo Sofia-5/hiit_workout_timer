@@ -350,39 +350,25 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-#timer > div {
-  padding: 30px;
-  border-radius: 10px;
-  background: #170B47;
-  display: inline-block;
-}
-
-.totalWorkoutTimer {
-  width: 49%;
-  height: 100%;
-  margin-right: 10px;
-}
-
+.totalWorkoutTimer,
 .breakTimer {
-  width: 50%;
-  height: 100%;
-  margin-left: 10px;
+  width: 47%;
+  background-color: #170B47;
+  border-radius: 10px;
+  padding: 10px 0;
 }
 
-.breakTimer h3 {
-  padding: 10px 30px;
+.workoutTimerH3,
+.breakTimerH3 {
+  width: 98%;
 }
 
-#timer div > span {
+.whiteBox {
+  background-color: #ffffff;
+  border-radius: 10px;
   padding: 30px;
-  margin: 10px auto;
-  border-radius: 5px;
-  background: white;
   display: inline-block;
 }
 
@@ -533,5 +519,16 @@ footer {
   text-align: center;
   background-color: #170B47;
   padding: 10px 0;
+}
+
+/*****************/
+/* Media Queries */
+/*****************/
+/* Timer Styles */
+/*****************/
+@media (max-width: 1129px) {
+  .breakTimer h3 {
+    padding: 15px 30px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
