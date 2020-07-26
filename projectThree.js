@@ -49,7 +49,10 @@ timerApp.eventListener = function() {
 
 // 3. Create a variable to store the function of the total workout countdown timer  
 timerApp.totalTimer = function(totalSecsOfExercises) {
-  let timer = totalSecsOfExercises; 
+  let timer = totalSecsOfExercises;
+  // Display the total workout time on the DOM
+  $('.totalSeconds').text(timer);
+  
   let timeToBreak = 0;
   // Start timer witha 3 seconds delay 
   setTimeout(() => {
