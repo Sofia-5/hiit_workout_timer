@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css"/>
+    <title>Workout Timer</title>
+    </head>
+<body>
+  <header class="wrapper">   
+    <h1>Hit Workout Timer</h1> 
+  </header>
+
+  <main> 
+    <section class="sectionOne">
+        <!------------------------------------------->
+        <!-- TOTAL WORKOUT TIMER COUNTDOWN DISPLAY -->
+        <!------------------------------------------->
+        <div class="timer">
+
+          <div class="totalWorkoutTimer"> 
+            <div class="workoutTimerH3">
+              <h3>Total Workout Time</h3> 
+            </div>
+            <div class="whiteBox">
+              <span class="totalSeconds" id="second"> 00 </span>
+            </div>
+            <div class="label">Seconds</div>
+          </div> 
+
+          <!------------------------------------------->
+          <!-- TOTAL BREAK TIMER COUNTDOWN DISPLAY ---->
+          <!------------------------------------------->
+          <div class="breakTimer"> 
+            <div class="breakTimerH3">
+              <h3>Break Time</h3>
+            </div>
+            <div class="whiteBox">
+              <span class="breakSeconds" id="second"> 00 </span>
+            </div>
+            <div class="label">Seconds</div> 
+          </div> 
+
+        </div>
+    </section>
+    
+    <section class="sectionTwo">
+    <!------------------------------------------->
+    <!--- USER WORKOUT CUSTOMIZATION FORM ------->
+    <!------------------------------------------->
+      <form>
+          <h2>Customize Your Workout</h2>
+
+          <!--- INPUT TO CUSTOMIZE THE NUMBER OF EXERCISE TYPES ------->
+          <!----------------------------------------------------------->
+          <div class="typesOfExercises">
+              <label for="typesOfExercises">Number of Exercises</label>
+              <input type="number" min="1" id="typesOfExercises" placeholder="Number of Types of Exercises" required>
+          </div> 
+
+          <!--- INPUT TO CUSTOMIZE THE NUMBER OF SETS PER EXERCISE ---->
+          <!----------------------------------------------------------->
+          <div class="numberOfSets">
+              <label for="numberOfSets">Number of Sets</label>
+              <input type="number" min="1" id="numberOfSets" placeholder="Number of Sets" required>
+              <p>Sets will be 30 seconds each</p>
+              <p>Breaks will be 5 seconds between each set.</p>
+          </div>  
+
+          <!---- BUTTON TO SUBMIT ENTRY AND START COUNTDOWN ------->
+          <!------------------------------------------------------->
+          <div class="bottomForm">
+              <button type="submit" class="startTimer"> Start Timer </button>
+              <p>Countdown will begin 3 seconds after "Start Timer" is pressed to give you time to get into position.</p>
+          </div>
+      </form>
+      
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrapper">
+      <p>Copyright &copy; 2020 SofiaCodes5</p>
+      <p>Created @ <a href="https://junocollege.com/" target="_blank">Juno College</a></p> 
+    </div>
+  </footer>
+
+  <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+  <script src="projectThree.js"></script>
+</body>
+</html>
+
