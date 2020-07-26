@@ -59,7 +59,7 @@ timerApp.totalTimer = function(totalSecsOfExercises) {
       timer = timer - 1; 
       timeToBreak = timeToBreak + 1; 
       console.log ('timeToBreak');
-      if (timeToBreak === 10 && timer > 0) {
+      if (timeToBreak === 30 && timer > 0) {
         timeToBreak = -5 ; 
         timerApp.breakTimer (); 
       }
