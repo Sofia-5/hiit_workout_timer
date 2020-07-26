@@ -66,3 +66,20 @@ textarea:focus {
   font-weight: 300;
 }
 
+.numberOfSets p {
+  font-size: 1.5rem;
+  line-height: inherit;
+  letter-spacing: inherit;
+  padding-top: 15px;
+  width: 85%;
+}
+
+.bottomForm p {
+  font-size: 1.5rem;
+  line-height: inherit;
+  letter-spacing: inherit;
+  padding: 25px;
+  width: 85%;
+  display: inline-block;
+  align-items: center;
+}

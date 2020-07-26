@@ -498,6 +498,26 @@ textarea:focus {
   font-weight: 300;
 }
 
+.numberOfSets p {
+  font-size: 1.5rem;
+  line-height: inherit;
+  letter-spacing: inherit;
+  padding-top: 15px;
+  width: 85%;
+}
+
+.bottomForm p {
+  font-size: 1.5rem;
+  line-height: inherit;
+  letter-spacing: inherit;
+  padding: 25px;
+  width: 85%;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /*****************/
 /* Submit Button */
 /*****************/
@@ -510,7 +530,7 @@ button {
   font-weight: 400;
   color: #ffffff;
   border: 3px solid #170B47;
-  margin: 35px 0;
+  margin: 35px 0 10px 0;
   font-size: 2.5rem;
   padding: 15px 10px;
   background-color: #D81E5B;
@@ -664,6 +684,9 @@ footer {
   }
   .breakTimer h3 {
     padding: 10px 5px;
+  }
+  .startTimer {
+    margin: 25px 0 5px 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */
