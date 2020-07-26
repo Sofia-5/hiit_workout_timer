@@ -1,11 +1,25 @@
 /*****************/
 /* Submit Button */ 
 /*****************/
-
-
 button {
-  font-family: $body;
-  color: #ffffff;
-  font-weight: 700; 
-  font-size: 25px; 
+  border-radius: 10%;
 }
+
+.startTimer {
+  font-family: $body;
+  font-weight: 400; 
+  color: #ffffff;
+  border: 3px solid $primaryColour;
+  margin: 35px 0;
+  font-size: 2.5rem;
+  padding: 15px 10px;
+  background-color: $supAccentTwo;
+  width: (100% / 3);
+}
+
+button:hover {
+  // background-color: $supAccent;
+  border: 3px solid $supAccent;
+  color: $primaryColour;
+}
+

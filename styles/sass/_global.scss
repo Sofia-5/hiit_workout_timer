@@ -2,6 +2,12 @@
 /* Global Styles */ 
 /*****************/
 
+.wrapper {
+  max-width: 1200px;
+  width: 85%;
+  margin: 0 auto;  
+}
+
 body { 
   @include background ();
   text-align: center; 
@@ -24,25 +30,36 @@ h1 {
 
 h2 {
   font-size: 35px; 
-  margin: 40px auto;
+  margin: 40px auto 10px;
+}
+
+h3,
+label,
+.label {
+  font-family: $body;
+  color: #ffffff; 
 }
 
 h3,
 label {
-  font-family: $body;
-  color: #ffffff; 
-  font-size: 25px; 
-  margin: 5px auto;
+  font-size: 20px; 
   font-weight: 400; 
-  width: 80%;
+  width: 100%;
 }
 
-.label {
+h3 {
+  padding: 0 20px;
+}
+
+p,
+a {
   font-family: $body;
+  font-weight: 300;
   color: #ffffff;
-  font-weight: 300; 
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 1px;
 }
-
 
 
 

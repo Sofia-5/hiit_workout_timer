@@ -272,6 +272,12 @@ html {
 /*****************/
 /* Global Styles */
 /*****************/
+.wrapper {
+  max-width: 1200px;
+  width: 85%;
+  margin: 0 auto;
+}
+
 body {
   background: #f19d79;
   background: -webkit-gradient(linear, left top, right top, color-stop(60%, rgba(241, 157, 121, 0.9)), to(rgba(215, 29, 91, 0.7)));
@@ -297,64 +303,96 @@ h1 {
 
 h2 {
   font-size: 35px;
-  margin: 40px auto;
+  margin: 40px auto 10px;
+}
+
+h3,
+label,
+.label {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
 }
 
 h3,
 label {
-  font-family: "Roboto", sans-serif;
-  color: #ffffff;
-  font-size: 25px;
-  margin: 5px auto;
+  font-size: 20px;
   font-weight: 400;
-  width: 80%;
+  width: 100%;
 }
 
-.label {
+h3 {
+  padding: 0 20px;
+}
+
+p,
+a {
   font-family: "Roboto", sans-serif;
-  color: #ffffff;
   font-weight: 300;
+  color: #ffffff;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 1px;
 }
 
 /*****************/
 /* Timer Styles */
 /*****************/
-#timer {
-  font-family: sans-serif;
-  color: #fff;
-  display: inline-block;
-  font-weight: 100;
-  text-align: center;
+.sectionOne {
+  max-width: 1200px;
+  width: 50%;
+  margin: 20px auto;
+}
+
+.timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #timer > div {
   padding: 30px;
-  border-radius: 5px;
-  background: navy;
+  border-radius: 10px;
+  background: #170B47;
   display: inline-block;
-  margin: 10px;
+}
+
+.totalWorkoutTimer {
+  width: 49%;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.breakTimer {
+  width: 50%;
+  height: 100%;
+  margin-left: 10px;
+}
+
+.breakTimer h3 {
+  padding: 10px 30px;
 }
 
 #timer div > span {
   padding: 30px;
+  margin: 10px auto;
   border-radius: 5px;
   background: white;
   display: inline-block;
 }
 
-#timer p {
-  padding: 5px;
-  font-size: 20px;
-  color: navy;
-}
-
 #second {
   font-size: 40px;
-  color: navy;
+  color: #170B47;
 }
 
 .label {
-  padding-top: 10px;
+  font-weight: 300;
   font-size: 25px;
 }
 
@@ -369,9 +407,9 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #0D0628;
+  background-color: #170B47;
   width: 50%;
-  margin: 20px auto;
+  margin: 30px auto 50px;
   border-radius: 10px;
 }
 
@@ -414,8 +452,8 @@ label {
 }
 
 input {
-  color: navy;
-  border: 1px solid navy;
+  color: #170B47;
+  border: 1px solid primaryColour;
   border-radius: 5%;
   font-size: 25px;
   padding: 10px;
@@ -427,65 +465,73 @@ input.number {
   padding: 13px;
 }
 
-.startTimer {
-  color: navy;
-  border: 3px solid navy;
-  margin: 25px 0;
-  border-radius: 5%;
-  font-size: 25px;
-  padding: 10px;
-  background-color: palevioletred;
-  width: 100px;
-}
-
 input:focus,
 textarea:focus {
-  border-color: #ffb100;
+  border-color: #B9E6FF;
 }
 
 ::-webkit-input-placeholder {
-  color: #F26430;
-  font-family: 'Barlow', sans-serif;
-  font-size: 1rem;
-  letter-spacing: 2px;
+  color: #170B47;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
   font-weight: 300;
 }
 
 :-ms-input-placeholder {
-  color: #F26430;
-  font-family: 'Barlow', sans-serif;
-  font-size: 1rem;
-  letter-spacing: 2px;
+  color: #170B47;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
   font-weight: 300;
 }
 
 ::-ms-input-placeholder {
-  color: #F26430;
-  font-family: 'Barlow', sans-serif;
-  font-size: 1rem;
-  letter-spacing: 2px;
+  color: #170B47;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
   font-weight: 300;
 }
 
 ::placeholder {
-  color: #F26430;
-  font-family: 'Barlow', sans-serif;
-  font-size: 1rem;
-  letter-spacing: 2px;
+  color: #170B47;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
   font-weight: 300;
-}
-
-button:hover {
-  background-color: white;
 }
 
 /*****************/
 /* Submit Button */
 /*****************/
 button {
+  border-radius: 10%;
+}
+
+.startTimer {
   font-family: "Roboto", sans-serif;
+  font-weight: 400;
   color: #ffffff;
-  font-weight: 700;
-  font-size: 25px;
+  border: 3px solid #170B47;
+  margin: 35px 0;
+  font-size: 2.5rem;
+  padding: 15px 10px;
+  background-color: #D81E5B;
+  width: 33.33333%;
+}
+
+button:hover {
+  border: 3px solid #B9E6FF;
+  color: #170B47;
+}
+
+/************/
+/*  Footer  */
+/************/
+footer {
+  text-align: center;
+  background-color: #170B47;
+  padding: 10px 0;
 }
 /*# sourceMappingURL=styles.css.map */

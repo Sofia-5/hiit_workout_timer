@@ -1,42 +1,56 @@
 /*****************/
 /* Timer Styles */ 
 /*****************/
+.sectionOne {
+  max-width: 1200px;
+  width: 50%;
+  margin: 20px auto;  
+}
 
-#timer{ 
-  font-family: sans-serif; 
-  color: #fff; 
-  display: inline-block; 
-  font-weight: 100; 
-  text-align: center; 
- 
-} 
+.timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #timer > div{ 
   padding: 30px; 
-  border-radius: 5px; 
-  background: navy; 
+  border-radius: 10px; 
+  background: $primaryColour; 
   display: inline-block; 
-  margin: 10px;
+  // margin: 10px 0;
 } 
+
+.totalWorkoutTimer {
+  width: (100% / 2) - 1%;
+  height: 100%;
+  margin-right: 10px; 
+}
+
+.breakTimer {
+  width: (100% / 2);
+  height: 100%;
+  margin-left: 10px; 
+}
+
+.breakTimer h3 { 
+  padding: 10px 30px;
+}
 
 #timer div > span{ 
   padding: 30px; 
+  margin: 10px auto;
   border-radius: 5px; 
   background: white; 
   display: inline-block; 
 } 
 
-#timer p{ 
-  padding: 5px; 
-  font-size: 20px; 
-  color: navy; 
-} 
-
 #second { 
   font-size: 40px; 
-  color: navy; 
+  color: $primaryColour; 
 }
 
 .label {
-  padding-top: 10px; 
+  font-weight: 300; 
   font-size: 25px; 
 }
