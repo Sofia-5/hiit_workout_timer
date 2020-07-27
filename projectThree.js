@@ -2,7 +2,7 @@
 // ** JS CODE ** // 
 
 // 1. a) Doc ready 
-$(document).ready(function() {
+$(function() {
   console.log('document ready'); 
   // Call the init function when the document is ready
   timerApp.init ();
@@ -46,7 +46,6 @@ timerApp.eventListener = function() {
 
     // Call the totalTimer function and pass the parameter (total exercise time) in the function 
     timerApp.totalTimer (totalSecsOfExercises);
-   
   })
 }
 
@@ -62,11 +61,9 @@ timerApp.totalTimer = function(totalSecsOfExercises) {
     // "Go" Audio will play after 3 second delay
     startAudio.play ();
     let timerInterval = setInterval(function (){
-      console.log('tick')
       $('.totalSeconds').text(timer);
       timer = timer - 1; 
       timeToBreak = timeToBreak + 1; 
-      console.log ('timeToBreak');
       if (timeToBreak === 30 && timer > 0) {
         timeToBreak = -5 ; 
         timerApp.breakTimer (); 
