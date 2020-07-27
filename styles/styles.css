@@ -346,6 +346,11 @@ a {
           justify-content: space-between;
 }
 
+.lightUpTotal {
+  -webkit-box-shadow: 0px 0px 10px 10px #B9E6FF;
+          box-shadow: 0px 0px 10px 10px #B9E6FF;
+}
+
 .totalWorkoutTimer,
 .breakTimer {
   width: 47%;
