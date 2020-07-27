@@ -106,10 +106,3 @@ timerApp.breakTimer = function() {
     }
   }, 1000)
 }
-
-// 5. Preventing users from clicking submit more than once 
-// timerApp.clickOnce = function DisableButton(button) {
-//   button.disabled = true;
-//   button.value = 'Submitted'; 
-//   button.form.submit();
-// }
