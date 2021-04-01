@@ -351,16 +351,35 @@ a {
           box-shadow: 0px 0px 10px 10px #B9E6FF;
 }
 
-.totalWorkoutTimer,
-.breakTimer {
+.timerContainer {
   width: 47%;
   background-color: #170B47;
   border-radius: 10px;
   padding: 10px 0;
 }
 
-.workoutTimerH3,
-.breakTimerH3 {
+#alternatingTime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#totalSets {
+  margin: 0 20px;
+}
+
+#totalWorkoutTimer {
+  margin: 20px;
+  background-color: #F19C79;
+}
+
+.headerH3 {
   width: 98%;
   margin-top: 15px;
 }
@@ -377,7 +396,10 @@ h3 {
   margin: 10px auto;
 }
 
-#second {
+.setCountdown,
+.remaining,
+.breakCountdown,
+.totalSeconds {
   font-size: 40px;
   color: #170B47;
 }
@@ -386,6 +408,10 @@ h3 {
   font-weight: 300;
   font-size: 20px;
   margin-bottom: 15px;
+}
+
+.setCountdownTimer {
+  display: none;
 }
 
 /*****************/
@@ -415,7 +441,14 @@ h2 {
   margin-top: 20px;
 }
 
-form .typesOfExercises {
+form .typesOfExercises,
+form .numberOfSets,
+form .durationOfSets {
+  margin: 20px 0;
+}
+
+.breakDurationSets,
+.breakDurationExercise {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -429,10 +462,10 @@ form .typesOfExercises {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 30px 0;
+  margin: 15px 0;
 }
 
-form .numberOfSets {
+.flexFormContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -530,16 +563,17 @@ button {
   border-radius: 8px;
 }
 
-.startTimer {
+.startTimer,
+.pauseTimer {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #ffffff;
   border: 3px solid #170B47;
-  margin: 35px 0 10px 0;
   font-size: 2.5rem;
   padding: 15px 10px;
   background-color: #D81E5B;
   width: 33.33333%;
+  margin: 35px 10px 10px 10px;
 }
 
 button:hover {

@@ -14,12 +14,10 @@
 
   <main> 
     <section class="sectionOne">
-        <!------------------------------------------->
-        <!-- TOTAL WORKOUT TIMER COUNTDOWN DISPLAY -->
-        <!------------------------------------------->
+      
         <div class="timer">
 
-          <div class="totalWorkoutTimer" id="totalWorkoutTimer"> 
+          <!-- <div class="totalWorkoutTimer" id="totalWorkoutTimer"> 
             <div class="workoutTimerH3">
               <h3>Total Workout Time</h3> 
             </div>
@@ -27,22 +25,63 @@
               <span class="totalSeconds" id="second"> 00 </span>
             </div>
             <div class="label">Seconds</div>
-          </div> 
+          </div>  -->
 
-          <!------------------------------------------->
-          <!-- TOTAL BREAK TIMER COUNTDOWN DISPLAY ---->
-          <!------------------------------------------->
-          <div class="breakTimer" id="breakTimer"> 
-            <div class="breakTimerH3">
-              <h3>Break Time</h3>
+        <!------------------------------------------->
+        <!-- TOTAL REMAINING NUMBER OF EXERCISES COUNTDOWN -->
+        <!------------------------------------------->
+
+          <div class="timerContainer" id="totalExercises"> 
+            <div class="headerH3">
+              <h3>Exercises Remaining</h3> 
             </div>
             <div class="whiteBox">
-              <span class="breakSeconds" id="second"> 00 </span>
+              <span class="remaining"> 00 </span>
             </div>
-            <div class="label">Seconds</div> 
+            <!-- <div class="label">Seconds</div> -->
           </div> 
 
-        </div>
+        <!------------------------------------------->
+        <!-- TOTAL REMAINING NUMBER OF SETS COUNTDOWN -->
+        <!------------------------------------------->
+
+        <div class="timerContainer" id="totalSets"> 
+          <div class="headerH3">
+            <h3>Sets Remaining</h3> 
+          </div>
+          <div class="whiteBox">
+            <span class="remaining"> 00 </span>
+          </div>
+          <!-- <div class="label">Seconds</div> -->
+        </div> 
+
+          <!------------------------------------------->
+          <!-- DISPLAY TOGGLE BETWEEN COUNTDOWN OF SETS AND BREAKS ---->
+          <!------------------------------------------->
+        
+          <div class="timerContainer" id="alternatingTime"> 
+            <div class="breakTimer">
+              <div class="headerH3">
+                <h3>Break Time</h3>
+              </div>  
+              <div class="whiteBox">
+                <span class="breakCountdown"> 00 </span>
+              </div>
+              <div class="label">Seconds</div> 
+            </div>
+
+            <div class="setCountdownTimer">
+              <div class="headerH3">
+                <h3>Set Time</h3>
+              </div>
+              <div class="whiteBox">
+                <span class="setCountdown"> 00 </span>
+              </div>
+              <div class="label">Seconds</div> 
+            </div>
+
+          </div>
+
     </section>
     
     <section class="sectionTwo">
@@ -52,45 +91,62 @@
       <form>
           <h2>Customize Your Workout</h2>
 
-          <!--- #1 INPUT TO CUSTOMIZE THE NUMBER OF EXERCISE TYPES ------->
-          <!----------------------------------------------------------->
-          <div class="typesOfExercises">
-              <label for="typesOfExercises">Number of Exercises</label>
-              <input type="number" min="1" id="typesOfExercises" placeholder="Number of Types of Exercises" required>
-          </div> 
+          <div class="flexFormContainer">
+            <!--- TOTAL WORKOUT TIME PREVIEW AND COUNTDOWN ------->
+            <!----------------------------------------------------------->
+            <div class="timerContainer" id="totalWorkoutTime"> 
+              <div class="headerH3">
+                <h3>Total Workout Time</h3> 
+              </div>
+              <div class="whiteBox">
+                <span class="totalSeconds" id="minutes"> 00 </span>
+                <!-- Need to change seconds into minutes and seconds  -->
+              </div>
+              <div class="label">Minutes</div>
+            </div> 
 
-          <!--- #2 INPUT TO CUSTOMIZE THE NUMBER OF SETS PER EXERCISE ---->
-          <!----------------------------------------------------------->
-          <div class="numberOfSets">
-              <label for="numberOfSets">Number of Sets</label>
-              <input type="number" min="1" id="numberOfSets" placeholder="Number of Sets" required>
-          </div>  
+            <!--- #1 INPUT TO CUSTOMIZE THE NUMBER OF EXERCISE TYPES ------->
+            <!----------------------------------------------------------->
+            <div class="typesOfExercises">
+                <label for="typesOfExercises">Number of Exercises</label>
+                <input type="number" min="1" id="typesOfExercises" placeholder="Number of Types of Exercises" required>
+            </div> 
 
-          <!--- #3 INPUT TO CUSTOMIZE THE NUMBER OF SECONDS PER SET ---->
-          <!----------------------------------------------------------->
-          <div class="durationOfSets">
-            <label for="durationfSets">Duration of Sets</label>
-            <input type="number" min="1" id="durationOfSets" placeholder="Duration of Sets" required>
-        </div>  
+            <!--- #2 INPUT TO CUSTOMIZE THE NUMBER OF SETS PER EXERCISE ---->
+            <!----------------------------------------------------------->
+            <div class="numberOfSets">
+                <label for="numberOfSets">Number of Sets</label>
+                <input type="number" min="1" id="numberOfSets" placeholder="Number of Sets" required>
+            </div>  
 
-          <!--- #4 INPUT TO CUSTOMIZE THE DURATION OF BREAK BETWEEN SETS ---->
-          <!----------------------------------------------------------->
-          <div class="breakDurationSets">
-            <label for="breakDurationSets">Duration of Break Between Sets</label>
-            <input type="number" min="1" id="breakDurationSets" placeholder="Duration Between Sets" required>
-        </div>  
+            <!--- #3 INPUT TO CUSTOMIZE THE NUMBER OF SECONDS PER SET ---->
+            <!----------------------------------------------------------->
+            <div class="durationOfSets">
+              <label for="durationfSets">Duration of Sets</label>
+              <input type="number" min="1" id="durationOfSets" placeholder="Duration of Sets" required>
+            </div>  
 
-        <!--- #5 INPUT TO CUSTOMIZE THE DURATION OF BREAK BETWEEN EXERCISE ---->
-          <!----------------------------------------------------------->
-          <div class="breakDurationExercise">
-            <label for="breakDurationExercise">Duration of Break Between Each Exercise</label>
-            <input type="number" min="1" id="breakDurationExercise" placeholder="Duration Between Each Exercise" required>
-        </div>  
+            <!--- #4 INPUT TO CUSTOMIZE THE DURATION OF BREAK BETWEEN SETS ---->
+            <!----------------------------------------------------------->
+            <div class="breakDurationSets">
+              <label for="breakDurationSets">Duration of Break Between Sets</label>
+              <input type="number" min="1" id="breakDurationSets" placeholder="Duration Between Sets" required>
+            </div>  
 
+            <!--- #5 INPUT TO CUSTOMIZE THE DURATION OF BREAK BETWEEN EXERCISE ---->
+            <!----------------------------------------------------------->
+            <div class="breakDurationExercise">
+              <label for="breakDurationExercise">Duration of Break Between Each Exercise</label>
+              <input type="number" min="1" id="breakDurationExercise" placeholder="Duration Between Each Exercise" required>
+            </div>  
+
+          </div>
           <!---- BUTTON TO SUBMIT ENTRY AND START COUNTDOWN ------->
           <!------------------------------------------------------->
           <div class="bottomForm">
               <button type="submit" class="startTimer" id="disable"> Start Timer </button>
+              <button type="submit" class="pauseTimer" id="disable"> Pause Timer </button>
+              <!-- Once start timer is clicked on, it disappear and be replaced with a pause button, toggling between the two -->
               <p>Countdown will begin 3 seconds after "Start Timer" is pressed to give you time to get into position.</p>
           </div>
       </form>
